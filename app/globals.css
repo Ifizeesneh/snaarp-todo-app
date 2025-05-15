@@ -74,8 +74,7 @@ body {
 }
 
 /* Checkbox animation */
-.checkbox-container input:checked + .checkbox-custom {
-  
+.checkbox-container input:checked + .checkbox-custom { 
   border-color: #4f46e5;
   animation: pulse 0.5s;
 }

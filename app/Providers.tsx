@@ -11,7 +11,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(() => new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: Infinity, // Since we're using localStorage, we can keep the data fresh
+        staleTime: Infinity, // Since i am using localStorage, we can keep the data fresh
         refetchOnWindowFocus: false,
       },
     },

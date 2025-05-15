@@ -145,11 +145,11 @@ const TaskItem = ({ task }: TaskItemProps) => {
             >
               {task.title}
             </span>
-          </div>
-          <div className="flex opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          </div> 
+          <div className="flex md:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200">
             <button
               onClick={handleEdit}
-              className="px-2 py-1 text-sm text-blue-600 hover:text-blue-800 focus:outline-none transition-transform duration-200 hover:scale-110"
+              className="px-2 py-1 text-sm cursor-pointer text-blue-600 hover:text-blue-800 focus:outline-none transition-transform duration-200 hover:scale-110"
               aria-label="Edit task"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
@@ -159,7 +159,7 @@ const TaskItem = ({ task }: TaskItemProps) => {
             <button
               onClick={handleDelete}
               disabled={isDeleting}
-              className="px-2 py-1 text-sm text-red-600 hover:text-red-800 focus:outline-none transition-transform duration-200 hover:scale-110"
+              className="px-2 py-1 text-sm cursor-pointer text-red-600 hover:text-red-800 focus:outline-none transition-transform duration-200 hover:scale-110"
               aria-label="Delete task"
             >
               {isDeleting ? (
